@@ -1,37 +1,156 @@
 /******
 naniar theme
 *******/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro:wght@300;400&display=swap');
-
+/*-------- Background color & body font --------*/
 body {
-  background-color: #ffffff;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #363636;
   font-size: 12;
 }
 
+/*-------- Main Panel ---------*/
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+/*------- padding sides --------*/
+.band {
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+
+/* Emphasis (e.g. italics) */
 em {
     font-family: 'Source Sans Pro', sans-serif;
-    color: slategrey;
+    color: #363636;
 }
 
-.ace-tm {
-    background-color: #ffffff;
-    color: black;
+/*--------- Headers ---------*/
+
+h2 {
+  color: teal;
+  font-family: 'Roboto Slab', serif;
 }
 
+h3 {
+  color: lightseagreen;
+  font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+  color: teal;
+  font-family: 'Roboto Slab', serif;
+}
+
+h5 {
+    color: darkorange;
+    background-color: white;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+    color: gray;
+    background-color:  #e9e9e9;
+    border: 1px solid lightgray;
+}
+
+/*------- Rectangle panel behind code chunk --------*/
 .panel, pre {
     border-radius: 0;
-    border-color: #e0e0e0;
-    background-color: #ffffff;
+    background-color: white;
+    border: 0;
 }
 
-.panel-default > .panel-heading {
-    color: #555555;
-    background-color: #ffffff;
-    border-color: #dddddd;
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+    background-color: white;
+    color: #3f3f3f;
+    border: 1px solid lightgray;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
 }
 
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 19px;
+    padding-right: 6px;
+    background-repeat: no-repeat;
+    background-color: #e9e9e9;
+    color: gray;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: white;
+    color: #3f3f3f;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: gray;
+    background-color: #ffe7c5;
+    font-size: 12px;
+}
+
+
+element {
+
+}
+.tutorial-question {
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+.panel-body {
+
+    padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+}
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/*------- Hyperlinks --------*/
+a {
+    font-family: 'Source Sans Pro', serif;
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: lightseagreen;
+    text-decoration: underline;
+}
+
+/*------- Main menu -------*/
 .topicsList .topic {
     font-family: 'Roboto Slab', serif;
     line-height: 40px;
@@ -54,57 +173,112 @@ em {
     font-family: 'Roboto Slab', serif;
     background-color: orange;
     color: #ffffff;
-    border: 0px;
+    border-bottom: 1px solid teal;
 }
 
-code {
-    font-family: 'Roboto Mono', monospace;
-    color: gray;
-    background-color: #ffecdd;
+/*--- When hovering ---*/
+.topicsList .topic:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: orange;
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    border: 0;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    border-radius: 5px 5px 0 0;
+    color: #363636;
+}
+
+/*------- Buttons -------*/
+
+.btn-primary, .btn-success, .btn-info, .btn-xs{
+    color: white;
+    background-color: orange;
+    background-image: none;
+    border: none;
+    font-family: 'Roboto Slab', serif;
     font-size: 12px;
 }
 
-a {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: teal;
-    text-decoration: none;
+/*------- Buttons when hovering -------*/
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
+  background-color: #ff780f;
+  color: white;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
-.btn-primary, .btn-success, .btn-info {
-    color: #ffffff;
-    background-color: orange;
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs{
+    font-size: 12px;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    margin-right: 0;
+    margin-top: -1px;
+    font-size: 12px;
+    margin-left: 12px;
+    padding-right: 8px;
+    font-weight: normal;
+    background-color: #ff780f;
+    color: white;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    color: lightgray;
+    background-color: slategray;
     background-image: none;
     border: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
+/*------- Button default/primary -------*/
 .btn-default {
-    color: #ffffff;
+    color: white;
+    background-color: orange;
+    border: teal;
+    background-image: none;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 12px;
+}
+
+.btn-primary {
+    color: white;
     background-color: orange;
     background-image: none;
+    border: teal;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 12px;
+}
+
+/*------- Update Next Section button -------*/
+.topicActions .btn-primary:hover {
+    color: white;
+    background-color: #ff780f;
+    background-image: none;
     border: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
-h2 {
-  color: teal;
-  font-family: 'Roboto Slab', serif;
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: teal;
+    border: teal;
+    color: white;
 }
 
-h3 {
-  color: teal;
-  font-family: 'Roboto Slab', serif;
-}
-
-h4 {
-  color: teal;
-  font-family: 'Roboto Slab', serif;
-}
-
-h5 {
-    color: darkorange;
-    background-color: white;
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-}
