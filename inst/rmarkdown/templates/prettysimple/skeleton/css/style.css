@@ -1,0 +1,289 @@
+/******
+prettysimple theme
+*******/
+
+/*-------- Google font imports --------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*-------- Background color & body font --------*/
+body {
+  background-color: white;
+  font-family: 'Catamaran', sans-serif;
+  color: #3f3f3f;
+  font-size: 12;
+}
+
+/*-------- Main Panel ---------*/
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ececec;
+}
+
+/*------- padding sides --------*/
+.band {
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+
+/* Emphasis (e.g. italics) */
+em {
+    font-family: 'Catamaran', sans-serif;
+    color: #3f3f3f;
+}
+
+/*--------- Headers ---------*/
+
+h2 {
+  color: teal;
+  font-family: 'Zilla Slab', serif;
+}
+
+h3 {
+  color: lightseagreen;
+  font-family: 'Zilla Slab', serif;
+}
+
+h4 {
+  color: #3f3f3f;
+  font-family: 'Catamaran', sans-serif;
+}
+
+h5 {
+    color:  #3f3f3f;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+    color: gray;
+    background-color:  gainsboro;
+    border: 1px solid lightgray;
+}
+
+/*------- Rectangle panel behind code chunk --------*/
+.panel, pre {
+    border-radius: 0;
+    background-color: white;
+    border: 0;
+}
+
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+    background-color: white;
+    color: #3f3f3f;
+    border: 1px solid lightgray;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 19px;
+    padding-right: 6px;
+    background-repeat: no-repeat;
+    background-color: gainsboro;
+    color: gray;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: white;
+    color: #3f3f3f;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: lightseagreen;
+    font-size: 12px;
+}
+
+
+element {
+
+}
+.tutorial-question {
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+.panel-body {
+
+    padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+}
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/*------- Hyperlinks --------*/
+a {
+    font-family: 'Jost', sans-serif;
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: slategray;
+    text-decoration: underline;
+}
+
+/*------- Main menu -------*/
+.topicsList .topic {
+    font-family: 'Zilla Slab', serif;
+    color: lightseagreen;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 2px 80px;
+    background-position: left 100%;
+        background-position-y: 100%;
+    background-image: url(images/topicProgress.png);
+    border-bottom: 0;
+    border-top: 0;
+    -webkit-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+/*------- Selected menu item -------*/
+.topicsList .topic.current {
+    font-family: 'Zilla Slab', serif;
+    background-color: teal;
+    color: white;
+    border: 0;
+}
+/*--- When hovering ---*/
+.topicsList .topic:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: slategray;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    border: 0;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: lightseagreen;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+/*------- Buttons -------*/
+
+.btn-primary, .btn-success, .btn-info, .btn-xs{
+    color: white;
+    background-color: slategray;
+    background-image: none;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+/*------- Buttons when hovering -------*/
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
+  background-color: teal;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+}
+
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs{
+    font-size: 12px;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    margin-right: 0;
+    margin-top: -1px;
+    font-size: 12px;
+    margin-left: 12px;
+    padding-right: 8px;
+    font-weight: normal;
+    background-color: lightseagreen;
+    color: white;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    color: lightgray;
+    background-color: slategray;
+    background-image: none;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*------- Button default/primary -------*/
+.btn-default {
+    color: white;
+    background-color: lightseagreen;
+    border: teal;
+    background-image: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: lightseagreen;
+    background-image: none;
+    border: teal;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+/*------- Update Next Section button -------*/
+.topicActions .btn-primary:hover {
+    color: white;
+    background-color: teal;
+    background-image: none;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: teal;
+    border: teal;
+    color: white;
+}
+
