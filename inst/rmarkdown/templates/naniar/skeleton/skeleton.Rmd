@@ -1,0 +1,27 @@
+---
+title: "Template Title"
+author: "Your Name"
+date: "The Date"
+output: 
+  learnr::tutorial:
+    css: css/style.css
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Welcome!
+
+lorem ipsum
+
+## Your turn
+Your turn! In the blank code chunk below, write code that returns the total number of `NA`s in the `age` column of `kp_rodents`. Notice that you can see the solution (but make sure to try coding it yourself manually first!). 
+
+```{r exercise_na_miss_1, exercise = TRUE}
+```
+
+```{r exercise_na_miss_1-solution}
+table(airquality$Ozone, useNA = "always")
+```
