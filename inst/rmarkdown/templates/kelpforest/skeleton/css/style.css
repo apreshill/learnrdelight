@@ -1,0 +1,252 @@
+/******
+kelpforest theme
+*******/
+
+/*-------- Google font imports --------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
+
+
+/*-------- Background color & body font --------*/
+body {
+  background-color: #184a4e;
+  font-family: 'Jost', sans-serif;
+  color: #fffef3;
+  font-size: 12;
+}
+
+/*-------- Main Panel ---------*/
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #115e64;
+}
+
+/* Emphasis (e.g. italics) */
+em {
+    font-family: 'Jost', sans-serif;
+    color: #fffef3;
+}
+
+/*--------- Headers ---------*/
+
+h2 {
+  color: #d3ce27;
+  font-family: 'Itim', cursive;
+}
+
+h3 {
+  color: #b8b626;
+  font-family: 'Itim', cursive;
+}
+
+h4 {
+  color: #f0efdf;
+  font-family: 'Itim', cursive;
+}
+
+h5 {
+    color:  #f0efdf;
+    font-family: 'Itim', cursive;
+    font-size: 16px;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+    color: white;
+    background-color:  #197d78;
+    border: 0;
+}
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+    background-color: #f0efdf;
+    color: teal;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 19px;
+    padding-right: 6px;
+    background-repeat: no-repeat;
+    background-color: #f0efdf;
+    color: #77b8a8;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #f0efdf;
+    color: teal;
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: #f0efdf;
+    background-color: #7e7d19;
+    font-size: 14px;
+}
+
+/*------- Hyperlinks --------*/
+a {
+    font-family: 'Jost', sans-serif;
+    color: #ffa131;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #ff7400;
+    text-decoration: underline;
+}
+
+/*------- Rectangle panel behind code chunk --------*/
+.panel, pre {
+    border-radius: 0;
+    border-color: #e0e0e0;
+    background-color: #197d78;
+    border: 0;
+}
+
+/*------- Main menu -------*/
+.topicsList .topic {
+    font-family: 'Itim', cursive;
+    color: #fffef3;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color: #7e7d19;
+    background-repeat: no-repeat;
+    background-size: 2px 80px;
+    background-position: left 100%;
+        background-position-y: 100%;
+    background-image: url(images/topicProgress.png);
+    border-bottom: 0;
+    border-top: 0;
+    -webkit-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+/*------- Selected menu item -------*/
+.topicsList .topic.current {
+    font-family: 'Itim', cursive;
+    background-color: #b7a91e;
+    color: #fffef3;
+    border: 0;
+}
+/*--- When hovering ---*/
+.topicsList .topic:hover {
+    background-color: #77b8a8;
+    color: #fffef3;
+}
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: #b7a91e;
+    color: #fffef3;
+    font-family: 'Itim', cursive;
+    font-size: 14px;
+    border: 0;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #77b8a8;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: #fffef3;
+}
+
+/*------- Buttons -------*/
+
+.btn-primary, .btn-success, .btn-info, .btn-xs{
+    color: #fffef3;
+    background-color: #b7a91e;
+    background-image: none;
+    border: none;
+    font-family: 'Itim', cursive;
+    font-size: 12px;
+}
+
+/*------- Buttons when hovering -------*/
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
+  background-color:  #77b8a8 ;
+  color: #fffef3;
+  font-family: 'Itim', cursive;
+}
+
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs{
+    font-size: 12px;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    margin-right: 0;
+    margin-top: -1px;
+    font-size: 12px;
+    margin-left: 12px;
+    padding-right: 8px;
+    font-weight: normal;
+    background-color:  #77b8a8 ;
+    color: #fffef3;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    color: #c8c8c8;
+    background-color: #5a5a5a;
+    background-image: none;
+    border: none;
+    font-family: 'Itim', cursive;
+}
+
+/*------- Button default/primary -------*/
+.btn-default {
+    color: #fffef3;
+    background-color: #b7a91e;
+    background-image: none;
+    border: none;
+    font-family: 'Itim', cursive;
+    font-size: 12px;
+}
+
+.btn-primary {
+    color: #fffef3;
+    background-color: #b7a91e;
+    background-image: none;
+    border: none;
+    font-family: 'Itim', cursive;
+    font-size: 12px;
+}
+
+/*------- Update Next Section button -------*/
+.topicActions .btn-primary:hover {
+    color: #fffef3;
+    background-color:  #77b8a8 ;
+    background-image: none;
+    border: none;
+    font-family: 'Itim', cursive;
+}
+
