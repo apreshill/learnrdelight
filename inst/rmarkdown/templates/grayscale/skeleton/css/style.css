@@ -1,21 +1,18 @@
 /******
-kelpforest theme
+grayscale theme
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coustard');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #184a4e;
-  font-family: 'Jost', sans-serif;
-  color: white;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  color: #3f3f3f;
   font-size: 12;
 }
 
@@ -26,69 +23,77 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #115e64;
+    background-color: #ececec;
 }
 
+/*------- padding sides --------*/
 .band {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     position: relative;
 }
 
 /* Emphasis (e.g. italics) */
 em {
-    font-family: 'Jost', sans-serif;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #3f3f3f;
 }
 
 /*--------- Headers ---------*/
 
 h2 {
-  color: #d3ce27;
-  font-family: 'Itim', cursive;
+  color: black;
+  font-family: 'Arvo', serif;
 }
 
 h3 {
-  color: #b8b626;
-  font-family: 'Itim', cursive;
+  color: dimgray;
+  font-family: 'Arvo', serif;
 }
 
 h4 {
-  color: #f0efdf;
-  font-family: 'Itim', cursive;
+  color: dimgray;
+  font-family: 'Arvo', serif;
 }
 
 h5 {
-    color:  #f0efdf;
-    font-family: 'Itim', cursive;
-    font-size: 16px;
+    color:  dimgray;
+    font-family: 'Arvo', serif;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: white;
-    background-color: #197d78;
+    color: dimgray;
+    background-color:  white;
+    border: 1px solid lightgray;
+}
+
+/*------- Rectangle panel behind code chunk --------*/
+.panel, pre {
+    border-radius: 0;
+    background-color: white;
     border: 0;
 }
+
 
 /*-------- Code chunk main panel --------*/
 
 .ace-tm {
     background-color: white;
-    color: teal;
-    border: 0;
+    color: dimgray;
+    border: 1px solid lightgray;
     font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /*-------- Line # cells --------*/
 
 .ace_gutter-cell {
-    padding-left: 19px;
-    padding-right: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-repeat: no-repeat;
-    background-color: #77b8a8;
-    color: teal;
+    background-color: gainsboro;
+    color: dimgray;
 }
 
 /*-------- Code returns --------*/
@@ -96,54 +101,45 @@ h5 {
     max-height: 500px;
     overflow-y: auto;
     background-color: white;
-    color: teal;
+    color: dimgray;
+    font-family: 'Roboto Mono', monospace;
 }
 
 
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: #f0efdf;
-    background-color: #7e7d19;
-    font-size: 13px;
+    color: dimgray;
+    background-color: gainsboro;
+    font-size: 12px;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Jost', sans-serif;
-    color: #b7a91e;
-    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
 }
 
 a:hover, a:focus {
-    color: #e1e12f;
+    color: black;
     text-decoration: underline;
-}
-
-/*------- Rectangle panel behind code chunk --------*/
-.panel, pre {
-    border-radius: 0;
-    border-color: #e0e0e0;
-    background-color: #197d78;
-    border: 0;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Itim', cursive;
-    color: white;
+    font-family: 'Arvo', serif;
+    color: black;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
     cursor: pointer;
-    background-color: #7e7d19;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 2px 80px;
     background-position: left 100%;
         background-position-y: 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 0;
-    border-top: 0;
+    border-bottom: 1px solid lightgray;
     -webkit-transition-property: background-position;
     transition-property: background-position;
     -webkit-transition-duration: 0.25s;
@@ -152,25 +148,25 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Itim', cursive;
-    background-color: #b7a91e;
-    color: white;
-    border: 0;
+    font-family: 'Arvo', serif;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid lightgray;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: #197d78;
+    background-color: dimgray;
     color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: #197d78;
+    background-color: dimgray;
     color: white;
-    font-family: 'Itim', cursive;
+    font-family: 'Arvo', serif;
     font-size: 14px;
-    border: 2px solid #77b8a8;
+    border: 0;
 }
 
 /*------- Solution popover --------*/
@@ -178,29 +174,28 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #77b8a8;
+    background-color: lightgray;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: white;
+    color: dimgray;
 }
 
 /*------- Buttons -------*/
 
 .btn-primary, .btn-success, .btn-info, .btn-xs{
     color: white;
-    background-color: #b7a91e;
+    background-color: dimgray;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Arvo', serif;
     font-size: 12px;
-    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: #77b8a8;
+  background-color: black;
   color: white;
-  font-family: 'Itim', cursive;
+  font-family: 'Arvo', serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -216,48 +211,51 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color:  #77b8a8 ;
+    background-color: black;
     color: white;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
-    color: #c8c8c8;
-    background-color: #5a5a5a;
+    color: lightgray;
+    background-color: dimgray;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
-    text-shadow: none;
+    font-family: 'Arvo', serif;
 }
 
 /*------- Button default/primary -------*/
 .btn-default {
     color: white;
-    background-color: #b7a91e;
+    background-color: dimgray;
+    border: 0;
     background-image: none;
-    border: none;
-    font-family: 'Itim', cursive;
-    font-size: 14px;
-    text-shadow: none;
+    font-family: 'Arvo', serif;
+    font-size: 12px;
 }
 
 .btn-primary {
     color: white;
-    background-color: #b7a91e;
+    background-color: dimgray;
     background-image: none;
-    border: none;
-    font-family: 'Itim', cursive;
-    font-size: 14px;
-    text-shadow: none;
+    border: 0;
+    font-family: 'Arvo', serif;
+    font-size: 12px;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
     color: white;
-    background-color:  #77b8a8 ;
+    background-color: black;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
-    text-shadow: none;
+    font-family: 'Arvo', serif;
+}
+
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: dimgray;
+    border: 0;
+    color: white;
 }
 

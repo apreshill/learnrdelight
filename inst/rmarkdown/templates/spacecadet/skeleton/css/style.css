@@ -4,7 +4,7 @@ spacecadet theme
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Roboto+Mono);
 
@@ -37,12 +37,12 @@ em {
 
 h2 {
   color:#8aff35;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Contrail One', cursive;
 }
 
 h3 {
   color: #d321ff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Contrail One', cursive;
 }
 
 h4 {
@@ -125,7 +125,7 @@ a:hover {
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Contrail One', cursive;
     color: #8aff35;
     line-height: 40px;
     font-size: 20px;
@@ -146,14 +146,14 @@ a:hover {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Contrail One', cursive;
     background-color: #af00ca;
     color: #8aff35;
     border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: #af00ca;
+    background-color: #313131;
 }
 
 /*------- Solution / Hint buttons -------*/

@@ -1,21 +1,18 @@
 /******
-kelpforest theme
+prettysimple theme
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coustard');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
-
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #184a4e;
-  font-family: 'Jost', sans-serif;
-  color: white;
+  background-color: white;
+  font-family: 'Catamaran', sans-serif;
+  color: #3f3f3f;
   font-size: 12;
 }
 
@@ -26,59 +23,68 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #115e64;
+    background-color: #ececec;
 }
 
+/*------- padding sides --------*/
 .band {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     position: relative;
 }
 
 /* Emphasis (e.g. italics) */
 em {
-    font-family: 'Jost', sans-serif;
-    color: white;
+    font-family: 'Catamaran', sans-serif;
+    color: #3f3f3f;
 }
 
 /*--------- Headers ---------*/
 
 h2 {
-  color: #d3ce27;
-  font-family: 'Itim', cursive;
+  color: #641863 ;
+  font-family: 'Zilla Slab', serif;
 }
 
 h3 {
-  color: #b8b626;
-  font-family: 'Itim', cursive;
+  color: #ab52aa  ;
+  font-family: 'Zilla Slab', serif;
 }
 
 h4 {
-  color: #f0efdf;
-  font-family: 'Itim', cursive;
+  color: #3f3f3f;
+  font-family: 'Catamaran', sans-serif;
 }
 
 h5 {
-    color:  #f0efdf;
-    font-family: 'Itim', cursive;
+    color:  #3f3f3f;
+    font-family: 'Catamaran', sans-serif;
     font-size: 16px;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: white;
-    background-color: #197d78;
+    color: gray;
+    background-color:  gainsboro;
+    border: 1px solid lightgray;
+}
+
+/*------- Rectangle panel behind code chunk --------*/
+.panel, pre {
+    border-radius: 0;
+    background-color: white;
     border: 0;
 }
+
 
 /*-------- Code chunk main panel --------*/
 
 .ace-tm {
     background-color: white;
-    color: teal;
-    border: 0;
+    color: #3f3f3f;
+    border: 1px solid lightgray;
     font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /*-------- Line # cells --------*/
@@ -87,8 +93,8 @@ h5 {
     padding-left: 19px;
     padding-right: 6px;
     background-repeat: no-repeat;
-    background-color: #77b8a8;
-    color: teal;
+    background-color: gainsboro;
+    color: gray;
 }
 
 /*-------- Code returns --------*/
@@ -96,47 +102,65 @@ h5 {
     max-height: 500px;
     overflow-y: auto;
     background-color: white;
-    color: teal;
+    color: #3f3f3f;
+    font-family: 'Roboto Mono', monospace;
 }
 
 
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: #f0efdf;
-    background-color: #7e7d19;
-    font-size: 13px;
+    color: white;
+    background-color: #ab52aa;
+    font-size: 12px;
+}
+
+
+element {
+
+}
+.tutorial-question {
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+.panel-body {
+
+    padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+}
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 /*------- Hyperlinks --------*/
 a {
     font-family: 'Jost', sans-serif;
-    color: #b7a91e;
+    color: #641863 ;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #e1e12f;
+    color: #641863 ;
     text-decoration: underline;
-}
-
-/*------- Rectangle panel behind code chunk --------*/
-.panel, pre {
-    border-radius: 0;
-    border-color: #e0e0e0;
-    background-color: #197d78;
-    border: 0;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Itim', cursive;
-    color: white;
+    font-family: 'Zilla Slab', serif;
+    color: #ab52aa  ;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
     cursor: pointer;
-    background-color: #7e7d19;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 2px 80px;
     background-position: left 100%;
@@ -152,25 +176,25 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Itim', cursive;
-    background-color: #b7a91e;
+    font-family: 'Zilla Slab', serif;
+    background-color: #641863 ;
     color: white;
     border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: #197d78;
+    background-color: #ab52aa  ;
     color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: #197d78;
+    background-color: #641863 ;
     color: white;
-    font-family: 'Itim', cursive;
+    font-family: 'Catamaran', sans-serif;
     font-size: 14px;
-    border: 2px solid #77b8a8;
+    border: 0;
 }
 
 /*------- Solution popover --------*/
@@ -178,7 +202,7 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #77b8a8;
+    background-color: #ab52aa  ;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
     color: white;
@@ -188,19 +212,18 @@ a:hover, a:focus {
 
 .btn-primary, .btn-success, .btn-info, .btn-xs{
     color: white;
-    background-color: #b7a91e;
+    background-color: #641863 ;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Catamaran', sans-serif;
     font-size: 12px;
-    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: #77b8a8;
+  background-color: #641863 ;
   color: white;
-  font-family: 'Itim', cursive;
+  font-family: 'Catamaran', sans-serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -216,48 +239,51 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color:  #77b8a8 ;
+    background-color: #ab52aa  ;
     color: white;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
-    color: #c8c8c8;
-    background-color: #5a5a5a;
+    color: lightgray;
+    background-color: #641863 ;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
-    text-shadow: none;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*------- Button default/primary -------*/
 .btn-default {
     color: white;
-    background-color: #b7a91e;
+    background-color: #ab52aa  ;
+    border: #641863 ;
     background-image: none;
-    border: none;
-    font-family: 'Itim', cursive;
-    font-size: 14px;
-    text-shadow: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
 }
 
 .btn-primary {
     color: white;
-    background-color: #b7a91e;
+    background-color: #ab52aa  ;
     background-image: none;
-    border: none;
-    font-family: 'Itim', cursive;
-    font-size: 14px;
-    text-shadow: none;
+    border: #641863 ;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
     color: white;
-    background-color:  #77b8a8 ;
+    background-color: #641863 ;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
-    text-shadow: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: #641863 ;
+    border: #641863 ;
+    color: white;
 }
 
