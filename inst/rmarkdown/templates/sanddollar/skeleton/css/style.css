@@ -1,19 +1,18 @@
 /******
-grayscale theme
+sanddollar
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #d8d8d8;
-  font-family: 'Zilla Slab', serif;
-  color: #3f3f3f;
-  font-size: 16px;
+  background-color: #e4e0dc;
+  font-family: 'Jaldi', sans-serif;
+  color: #616161;
 }
 
 /*-------- Main Panel ---------*/
@@ -23,7 +22,9 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #ececec;
+    background-color: white;
+    border-left: 0;
+    border-right: 0;
 }
 
 /*------- padding sides --------*/
@@ -33,45 +34,63 @@ body {
     position: relative;
 }
 
-/* Emphasis (e.g. italics) */
+/* Emphasis */
 em {
-    font-family: 'Zilla Slab', serif;
-    color: #3f3f3f;
+    font-family: 'Jaldi', sans-serif;
+    color: #3d3835;
 }
 
 /*--------- Headers ---------*/
 
+p {
+  font-size: 18px;
+}
+
 h2 {
-  color: black;
-  font-family: 'Barlow', sans-serif;
+  color: #217371;
+  font-family: 'Ropa Sans', sans-serif;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 h3 {
-  color: dimgray;
-  font-family: 'Barlow', sans-serif;
+  color: #40b6b4;
+  font-family: 'Ropa Sans', sans-serif;
 }
 
 h4 {
-  color: dimgray;
-  font-family: 'Barlow', sans-serif;
+  color: #40b6b4;
+  font-family: 'Ropa Sans', sans-serif;
 }
 
 h5 {
-    color:  dimgray;
-    font-family: 'Barlow', sans-serif;
+    color: #40b6b4;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Tutorial start over button */
+.topicsFooter .resetButton {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: .7;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: dimgray;
-    background-color:  white;
-    border: 1px solid lightgray;
+    color: #b8a48d;
+    background-color: #e4e0dc;
+    border-top: 1px solid #e4e0dc;
+    border-left: 1px solid #e4e0dc;
+    border-right: 1px solid #e4e0dc;
+    font-size: 16px;
 }
 
 /*------- Rectangle panels --------*/
 .panel, pre {
     border-radius: 0;
-    background-color: white;
+    background-color: #e4e0dc;
     border: 0;
     font-size: 16px;
 }
@@ -81,20 +100,23 @@ h5 {
 
 .ace-tm {
     background-color: white;
-    color: dimgray;
-    border: 1px solid lightgray;
+    color: #3f3f3f;
+    border-bottom: 1px solid #e4e0dc;
+    border-left: 1px solid #e4e0dc;
+    border-right: 1px solid #e4e0dc;
     font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /*-------- Line # cells --------*/
 
 .ace_gutter-cell {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 4px;
     background-repeat: no-repeat;
-    background-color: gainsboro;
-    color: dimgray;
+    background-color: #e4e0dc;
+    border: 0;
+    color: #b8a48d;
 }
 
 /*-------- Code returns --------*/
@@ -102,7 +124,7 @@ h5 {
     max-height: 500px;
     overflow-y: auto;
     background-color: white;
-    color: dimgray;
+    color: #3f3f3f;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -110,26 +132,27 @@ h5 {
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: dimgray;
-    background-color: gainsboro;
-    font-size: 12px;
+    color: white;
+    background-color: #40b6b4;
+    font-size: 14px;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Zilla Slab', serif;
-    color: gray;
+    font-family: 'Jaldi', sans-serif;
+    color: #217371;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: black;
+    color: #65bfb2;
     text-decoration: underline;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Barlow', sans-serif;
-    color: black;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #217371;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
@@ -138,9 +161,9 @@ a:hover, a:focus {
     background-repeat: no-repeat;
     background-size: 2px 80px;
     background-position: left 100%;
-        background-position-y: 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #edeae2;
+    border-top: 0;
     -webkit-transition-property: background-position;
     transition-property: background-position;
     -webkit-transition-duration: 0.25s;
@@ -149,25 +172,26 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Barlow', sans-serif;
-    background-color: #cecece;
-    color: black;
-    border: 1px solid lightgray;
+    font-family: 'Ropa Sans', sans-serif;
+    background-color: #b8a48d;
+    color: white;
+    border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: dimgray;
+    background-color: #40b6b4;
     color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: dimgray;
+    background-color: #40b6b4;
     color: white;
-    font-family: 'Barlow', sans-serif;
-    font-size: 14px;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 13px;
     border: 0;
+    text-shadow: none;
 }
 
 /*------- Solution popover --------*/
@@ -175,87 +199,73 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: lightgray;
+    background-color: #65bfb2;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: dimgray;
+    color: white;
+    text-shadow: none;
+    font-family: 'Jaldi', sans-serif;
 }
 
 /*------- Buttons -------*/
 
-.btn-primary, .btn-success, .btn-info, .btn-xs{
+.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
     color: white;
-    background-color: dimgray;
+    background-color: #40b6b4;
     background-image: none;
-    border: none;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
+    border: 0;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 15px;
+    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: black;
+  background-color: #217371;
   color: white;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Jaldi', sans-serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
 
 .tutorial-exercise-input .btn-xs{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .tutorial-exercise-input .btn-xs:hover {
     margin-right: 0;
     margin-top: -1px;
-    font-size: 12px;
+    font-size: 13px;
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: black;
+    background-color: #217371;
     color: white;
+    border: 0;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
-    color: lightgray;
-    background-color: dimgray;
+    color: white;
+    background-color: lightgray;
     background-image: none;
     border: none;
-    font-family: 'Barlow', sans-serif;
-}
-
-/*------- Button default/primary -------*/
-.btn-default {
-    color: white;
-    background-color: dimgray;
-    border: 0;
-    background-image: none;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-}
-
-.btn-primary {
-    color: white;
-    background-color: dimgray;
-    background-image: none;
-    border: 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 13px;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
     color: white;
-    background-color: black;
+    background-color: #217371;
     background-image: none;
     border: none;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Jaldi', sans-serif;
 }
 
 /*-------- Answer alert --------*/
 .alert-success {
-    background-color: dimgray;
+    background-color: #40b6b4;
     border: 0;
     color: white;
 }

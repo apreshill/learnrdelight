@@ -1,20 +1,18 @@
 /******
-grayscale theme
+prettysimple theme
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #885b64;
-  font-family: 'Roboto', sans-serif;
-  color: white;
+  background-color: white;
+  font-family: 'Catamaran', sans-serif;
+  color: #3f3f3f;
   font-size: 12;
 }
 
@@ -25,48 +23,49 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #b47f89;
+    background-color: #ececec;
 }
 
 /*------- padding sides --------*/
 .band {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     position: relative;
 }
 
 /* Emphasis (e.g. italics) */
 em {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'Catamaran', sans-serif;
+    color: #3f3f3f;
 }
 
 /*--------- Headers ---------*/
 
 h2 {
-  color: white;
-  font-family: 'Laila', serif;
+  color: #173fa9;
+  font-family: 'Zilla Slab', serif;
 }
 
 h3 {
-  color: white;
-  font-family: 'Laila', serif;
+  color: #3d96f3;
+  font-family: 'Zilla Slab', serif;
 }
 
 h4 {
-  color: white;
-  font-family: 'Laila', serif;
+  color: #3f3f3f;
+  font-family: 'Zilla Slab', serif;
 }
 
 h5 {
-    color:  white;
-    font-family: 'Laila', serif;
+    color:  #3f3f3f;
+    font-family: 'Zilla Slab', serif;
+    font-size: 16px;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: dimgray;
-    background-color:  white;
+    color: gray;
+    background-color:  gainsboro;
     border: 1px solid lightgray;
 }
 
@@ -82,7 +81,7 @@ h5 {
 
 .ace-tm {
     background-color: white;
-    color: dimgray;
+    color: #3f3f3f;
     border: 1px solid lightgray;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
@@ -91,11 +90,11 @@ h5 {
 /*-------- Line # cells --------*/
 
 .ace_gutter-cell {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 19px;
+    padding-right: 6px;
     background-repeat: no-repeat;
     background-color: gainsboro;
-    color: dimgray;
+    color: gray;
 }
 
 /*-------- Code returns --------*/
@@ -103,7 +102,7 @@ h5 {
     max-height: 500px;
     overflow-y: auto;
     background-color: white;
-    color: dimgray;
+    color: #3f3f3f;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -111,26 +110,27 @@ h5 {
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: #33691e;
-    background-color: #dcedc8;
+    color: white;
+    background-color: #3d96f3;
     font-size: 12px;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Roboto', sans-serif;
-    color: gainsboro;
+    font-family: 'Catamaran', sans-serif;
+    color: #173fa9 ;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
-    color:#f7e0e5;
+    color: #3d96f3  ;
     text-decoration: underline;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Laila', serif;
-    color: black;
+    font-family: 'Zilla Slab', serif;
+    color: #3d96f3  ;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
@@ -141,7 +141,8 @@ a:hover, a:focus {
     background-position: left 100%;
         background-position-y: 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 1px solid lightgray;
+    border-bottom: 0;
+    border-top: 0;
     -webkit-transition-property: background-position;
     transition-property: background-position;
     -webkit-transition-duration: 0.25s;
@@ -150,25 +151,26 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Laila', serif;
-    background-color: lightgray;
-    color: black;
-    border: 1px solid lightgray;
+    font-family: 'Zilla Slab', serif;
+    background-color: #173fa9 ;
+    color: white;
+    border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: dimgray;
+    background-color: #3d96f3  ;
     color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: dimgray;
+    background-color: #173fa9;
     color: white;
-    font-family: 'Laila', serif;
+    font-family: 'Catamaran', sans-serif;
     font-size: 14px;
     border: 0;
+    text-shadow: none;
 }
 
 /*------- Solution popover --------*/
@@ -176,28 +178,31 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: lightgray;
+    background-color: #3d96f3  ;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: dimgray;
+    color: white;
+    text-shadow: none;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*------- Buttons -------*/
 
-.btn-primary, .btn-success, .btn-info, .btn-xs{
+.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
     color: white;
-    background-color: dimgray;
+    background-color: #173fa9;
     background-image: none;
-    border: none;
-    font-family: 'Laila', serif;
+    border: 0;
+    font-family: 'Catamaran', sans-serif;
     font-size: 12px;
+    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: black;
+  background-color: #3d96f3;
   color: white;
-  font-family: 'Laila', serif;
+  font-family: 'Catamaran', sans-serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -213,51 +218,33 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: black;
+    background-color: #3d96f3;
     color: white;
+    border: 0;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
     color: lightgray;
-    background-color: dimgray;
+    background-color: slategray;
     background-image: none;
     border: none;
-    font-family: 'Laila', serif;
-}
-
-/*------- Button default/primary -------*/
-.btn-default {
-    color: white;
-    background-color: dimgray;
-    border: 0;
-    background-image: none;
-    font-family: 'Laila', serif;
-    font-size: 12px;
-}
-
-.btn-primary {
-    color: white;
-    background-color: dimgray;
-    background-image: none;
-    border: 0;
-    font-family: 'Laila', serif;
-    font-size: 12px;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
     color: white;
-    background-color: black;
+    background-color: #3d96f3;
     background-image: none;
     border: none;
-    font-family: 'Laila', serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*-------- Answer alert --------*/
 .alert-success {
-    background-color: dimgray;
-    border: 0;
+    background-color: #173fa9 ;
+    border: #173fa9 ;
     color: white;
 }
 

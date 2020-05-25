@@ -206,6 +206,7 @@ a:hover, a:focus {
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
     color: white;
+    font-family: 'Zilla Slab', serif;
 }
 
 /*------- Buttons -------*/

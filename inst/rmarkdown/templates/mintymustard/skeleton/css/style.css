@@ -1,18 +1,18 @@
 /******
-grayscale theme
+mintymustard
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #d8d8d8;
-  font-family: 'Zilla Slab', serif;
-  color: #3f3f3f;
+  background-color: white;
+  font-family: 'Jaldi', sans-serif;
+  color: #4f6457;
   font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #ececec;
+    background-color: #dfece9;
 }
 
 /*------- padding sides --------*/
@@ -33,47 +33,52 @@ body {
     position: relative;
 }
 
-/* Emphasis (e.g. italics) */
+/* Emphasis */
 em {
-    font-family: 'Zilla Slab', serif;
-    color: #3f3f3f;
+    font-family: 'Jaldi', sans-serif;
+    color: #4f6457;
 }
 
 /*--------- Headers ---------*/
 
 h2 {
-  color: black;
-  font-family: 'Barlow', sans-serif;
+  color: #4f6457;
+  font-family: 'Hepta Slab', serif;
+  font-size: 24px;
 }
 
 h3 {
-  color: dimgray;
-  font-family: 'Barlow', sans-serif;
+  color: #4f6457;
+  font-family: 'Hepta Slab', serif;
+  font-size: 20px;
 }
 
 h4 {
-  color: dimgray;
-  font-family: 'Barlow', sans-serif;
+  color: #4f6457;
+  font-family: 'Hepta Slab', serif;
+  font-size: 18px;
 }
 
 h5 {
-    color:  dimgray;
-    font-family: 'Barlow', sans-serif;
+    color: #4f6457;
+    font-family: 'Hepta Slab', serif;
+    font-size: 16px;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: dimgray;
-    background-color:  white;
-    border: 1px solid lightgray;
+    color: white;
+    background-color: #75b1a9;
+    border: 0;
 }
 
 /*------- Rectangle panels --------*/
 .panel, pre {
     border-radius: 0;
-    background-color: white;
+    background-color: #75b1a9;
     border: 0;
     font-size: 16px;
+    color: white;
 }
 
 
@@ -81,20 +86,21 @@ h5 {
 
 .ace-tm {
     background-color: white;
-    color: dimgray;
-    border: 1px solid lightgray;
+    color: #3f3f3f;
+    border: 0;
     font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /*-------- Line # cells --------*/
 
 .ace_gutter-cell {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 19px;
+    padding-right: 6px;
     background-repeat: no-repeat;
-    background-color: gainsboro;
-    color: dimgray;
+    background-color: #acd0c0;
+    border: 0;
+    color: white;
 }
 
 /*-------- Code returns --------*/
@@ -102,7 +108,7 @@ h5 {
     max-height: 500px;
     overflow-y: auto;
     background-color: white;
-    color: dimgray;
+    color: #3f3f3f;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -110,37 +116,39 @@ h5 {
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: dimgray;
-    background-color: gainsboro;
+    color: #4f6457;
+    background-color: #acd0c0;
     font-size: 12px;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Zilla Slab', serif;
-    color: gray;
+    font-family: 'Jaldi', sans-serif;
+    color: #75b1a9;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: black;
+    color: #75b1a9;
     text-decoration: underline;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Barlow', sans-serif;
-    color: black;
+    font-family: 'Hepta Slab', serif;
+    color: white;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: #75b1a9;
     background-repeat: no-repeat;
     background-size: 2px 80px;
     background-position: left 100%;
         background-position-y: 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 1px solid lightgray;
+    border-bottom: 0;
+    border-top: 0;
     -webkit-transition-property: background-position;
     transition-property: background-position;
     -webkit-transition-duration: 0.25s;
@@ -149,25 +157,26 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Barlow', sans-serif;
-    background-color: #cecece;
-    color: black;
-    border: 1px solid lightgray;
+    font-family: 'Hepta Slab', serif;
+    background-color: #d9b44a;
+    color: white;
+    border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: dimgray;
+    background-color: #acd0c0;
     color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: dimgray;
+    background-color: #d9b44a;
     color: white;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Jaldi', sans-serif;
     font-size: 14px;
     border: 0;
+    text-shadow: none;
 }
 
 /*------- Solution popover --------*/
@@ -175,28 +184,31 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: lightgray;
+    background-color: #75b1a9;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: dimgray;
+    color: white;
+    text-shadow: none;
+    font-family: 'Jaldi', sans-serif;
 }
 
 /*------- Buttons -------*/
 
-.btn-primary, .btn-success, .btn-info, .btn-xs{
+.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
     color: white;
-    background-color: dimgray;
+    background-color: #d9b44a;
     background-image: none;
-    border: none;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
+    border: 0;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 14px;
+    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: black;
+  background-color: #acd0c0;
   color: white;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Jaldi', sans-serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -212,50 +224,32 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: black;
+    background-color: #acd0c0;
     color: white;
+    border: 0;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
-    color: lightgray;
-    background-color: dimgray;
+    color: white;
+    background-color: lightgray;
     background-image: none;
     border: none;
-    font-family: 'Barlow', sans-serif;
-}
-
-/*------- Button default/primary -------*/
-.btn-default {
-    color: white;
-    background-color: dimgray;
-    border: 0;
-    background-image: none;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-}
-
-.btn-primary {
-    color: white;
-    background-color: dimgray;
-    background-image: none;
-    border: 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
+    font-family: 'Jaldi', sans-serif;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
     color: white;
-    background-color: black;
+    background-color: #acd0c0;
     background-image: none;
     border: none;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Jaldi', sans-serif;
 }
 
 /*-------- Answer alert --------*/
 .alert-success {
-    background-color: dimgray;
+    background-color: #d9b44a;
     border: 0;
     color: white;
 }

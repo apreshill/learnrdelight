@@ -42,12 +42,12 @@ em {
 /*--------- Headers ---------*/
 
 h2 {
-  color: #641863 ;
+  color: #641863;
   font-family: 'Zilla Slab', serif;
 }
 
 h3 {
-  color: #ab52aa  ;
+  color: #ab52aa;
   font-family: 'Zilla Slab', serif;
 }
 
@@ -115,47 +115,22 @@ code {
     font-size: 12px;
 }
 
-
-element {
-
-}
-.tutorial-question {
-
-    padding-top: 10px;
-    padding-bottom: 15px;
-
-}
-.panel-body {
-
-    padding: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-}
-* {
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-}
-
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Jost', sans-serif;
-    color: #641863 ;
+    font-family: 'Catamaran', sans-serif;
+    color: #641863;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #641863 ;
+    color: #ab52aa;
     text-decoration: underline;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
     font-family: 'Zilla Slab', serif;
-    color: #ab52aa  ;
+    color: #ab52aa;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
@@ -168,10 +143,6 @@ a:hover, a:focus {
     background-image: url(images/topicProgress.png);
     border-bottom: 0;
     border-top: 0;
-    -webkit-transition-property: background-position;
-    transition-property: background-position;
-    -webkit-transition-duration: 0.25s;
-    transition-duration: 0.25s;
 }
 
 /*------- Selected menu item -------*/
@@ -189,12 +160,12 @@ a:hover, a:focus {
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
-    margin-left: 15px;
-    background-color: #641863 ;
+    background-color: #ab52aa;
     color: white;
     font-family: 'Catamaran', sans-serif;
     font-size: 14px;
     border: 0;
+    text-shadow: none;
 }
 
 /*------- Solution popover --------*/
@@ -202,26 +173,28 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #ab52aa  ;
+    background-color: #ab52aa;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
     color: white;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*------- Buttons -------*/
 
-.btn-primary, .btn-success, .btn-info, .btn-xs{
+.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
     color: white;
-    background-color: #641863 ;
+    background-color: #ab52aa;
     background-image: none;
-    border: none;
+    border: 0;
     font-family: 'Catamaran', sans-serif;
     font-size: 12px;
+    text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
-.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: #641863 ;
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover, btn-xs:hover {
+  background-color: #641863;
   color: white;
   font-family: 'Catamaran', sans-serif;
 }
@@ -239,36 +212,19 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: #ab52aa  ;
+    background-color: #641863;
     color: white;
+    border: 0;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
     color: lightgray;
-    background-color: #641863 ;
+    background-color: gray;
     background-image: none;
     border: none;
     font-family: 'Catamaran', sans-serif;
-}
-
-/*------- Button default/primary -------*/
-.btn-default {
-    color: white;
-    background-color: #ab52aa  ;
-    border: #641863 ;
-    background-image: none;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 12px;
-}
-
-.btn-primary {
-    color: white;
-    background-color: #ab52aa  ;
-    background-image: none;
-    border: #641863 ;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 12px;
+    text-shadow: none;
 }
 
 /*------- Update Next Section button -------*/

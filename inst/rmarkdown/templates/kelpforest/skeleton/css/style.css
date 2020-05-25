@@ -4,7 +4,7 @@ kelpforest theme
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coustard');
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
@@ -16,7 +16,7 @@ body {
   background-color: #184a4e;
   font-family: 'Jost', sans-serif;
   color: white;
-  font-size: 12;
+  font-size: 16px;
 }
 
 /*-------- Main Panel ---------*/
@@ -45,22 +45,22 @@ em {
 
 h2 {
   color: #d3ce27;
-  font-family: 'Itim', cursive;
+  font-family: 'Share', cursive;
 }
 
 h3 {
   color: #b8b626;
-  font-family: 'Itim', cursive;
+  font-family: 'Share', cursive;
 }
 
 h4 {
   color: #f0efdf;
-  font-family: 'Itim', cursive;
+  font-family: 'Share', cursive;
 }
 
 h5 {
     color:  #f0efdf;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     font-size: 16px;
 }
 
@@ -105,7 +105,7 @@ code {
     font-family: 'Roboto Mono', monospace;
     color: #f0efdf;
     background-color: #7e7d19;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 /*------- Hyperlinks --------*/
@@ -116,21 +116,22 @@ a {
 }
 
 a:hover, a:focus {
-    color: #e1e12f;
+    color: #b7a91e;
     text-decoration: underline;
 }
 
-/*------- Rectangle panel behind code chunk --------*/
+/*------- Rectangle panels --------*/
 .panel, pre {
     border-radius: 0;
     border-color: #e0e0e0;
     background-color: #197d78;
     border: 0;
+    font-size: 16px;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     color: white;
     line-height: 40px;
     font-size: 20px;
@@ -152,7 +153,7 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     background-color: #b7a91e;
     color: white;
     border: 0;
@@ -168,7 +169,7 @@ a:hover, a:focus {
     margin-left: 15px;
     background-color: #197d78;
     color: white;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     font-size: 14px;
     border: 2px solid #77b8a8;
 }
@@ -181,7 +182,8 @@ a:hover, a:focus {
     background-color: #77b8a8;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: white;
+    color: #184a4e;
+    font-family: 'Share', cursive;
 }
 
 /*------- Buttons -------*/
@@ -191,7 +193,7 @@ a:hover, a:focus {
     background-color: #b7a91e;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     font-size: 12px;
     text-shadow: none;
 }
@@ -200,7 +202,7 @@ a:hover, a:focus {
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
   background-color: #77b8a8;
   color: white;
-  font-family: 'Itim', cursive;
+  font-family: 'Share', cursive;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -226,7 +228,7 @@ a:hover, a:focus {
     background-color: #5a5a5a;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     text-shadow: none;
 }
 
@@ -236,7 +238,7 @@ a:hover, a:focus {
     background-color: #b7a91e;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     font-size: 14px;
     text-shadow: none;
 }
@@ -246,7 +248,7 @@ a:hover, a:focus {
     background-color: #b7a91e;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     font-size: 14px;
     text-shadow: none;
 }
@@ -257,7 +259,7 @@ a:hover, a:focus {
     background-color:  #77b8a8 ;
     background-image: none;
     border: none;
-    font-family: 'Itim', cursive;
+    font-family: 'Share', cursive;
     text-shadow: none;
 }
 

@@ -47,13 +47,11 @@ h3 {
 
 h4 {
   color: #adadad;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Contrail One', cursive;
 }
 
 h5 {
-    color: #8600a1;
-    background-color: white;
-    display: inline-block;
+    color: #adadad;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -72,7 +70,7 @@ h5 {
     color: black;
     border: 0;
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 
@@ -163,6 +161,27 @@ a:hover {
     color: #8aff35;
     font-family: 'Open Sans', sans-serif;
     border: 0;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: dimgray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*------- Start Over popover --------*/
+.modal-body {
+    position: relative;
+    padding: 20px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
 }
 
 /*------- Buttons -------*/
