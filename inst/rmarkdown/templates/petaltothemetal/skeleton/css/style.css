@@ -1,0 +1,282 @@
+/******
+petaltothemetal
+*******/
+
+/*-------- Google font imports --------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*-------- Background color & body font --------*/
+body {
+  background-color: #A49592;
+  font-family: 'Sen', sans-serif;
+  color: #eeeae2;
+}
+
+/*-------- Main Panel ---------*/
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #727077;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+
+/*------- padding sides --------*/
+.band {
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+
+/* Emphasis */
+em {
+    font-family: 'Sen', sans-serif;
+    color: #eeeae2;
+}
+
+/*--------- Headers ---------*/
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  color: #eeeae2;
+  font-family: 'Josefin Slab', serif;
+}
+
+h3 {
+  color: #eae1d2;
+  font-family: 'Josefin Slab', serif;
+}
+
+h4 {
+  color: #eae1d2;
+  font-family: 'Josefin Slab', serif;
+}
+
+h5 {
+    color: #eae1d2;
+    font-family: 'Sen', sans-serif;
+}
+
+/* Tutorial start over button */
+.topicsFooter .resetButton {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+    color: #eeeae2;
+    background-color: #A49592;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:0;
+    font-size: 16px;
+}
+
+/*------- Rectangle panels --------*/
+.panel, pre {
+    border-radius: 0;
+    background-color: #A49592;
+    border: 0;
+    font-size: 16px;
+    color: #eeeae2;
+    border-bottom: 0;
+}
+
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+    background-color: #eeeae2;
+    color: #3f3f3f;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 10px;
+    padding-right: 4px;
+    background-repeat: no-repeat;
+    background-color: #A49592;
+    border: 0;
+    color: #eeeae2;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #eeeae2;
+    color: #3f3f3f;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: #eeeae2;
+    background-color: #A49592;
+    font-size: 15px;
+}
+
+/*------- Hyperlinks --------*/
+a {
+    font-family: 'Sen', sans-serif;
+    color: #eae1d2;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #f69793;
+    text-decoration: underline;
+}
+
+/*------- Main menu -------*/
+.topicsList .topic {
+    font-family: 'Sen', sans-serif;
+    color: #eeeae2;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color: #A49592;
+    background-repeat: no-repeat;
+    background-size: 2px 80px;
+    background-position: left 100%;
+    background-image: url(images/topicProgress.png);
+    border: 0;
+    -webkit-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+/*------- Selected menu item -------*/
+.topicsList .topic.current {
+    font-family: 'Sen', sans-serif;
+    background-color: #f69793;
+    color: #eeeae2;
+    border: 0;
+}
+/*--- When hovering ---*/
+.topicsList .topic:hover {
+    background-color: #727077;
+    color: #eeeae2;
+}
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: #A49592;
+    color: #eeeae2;
+    font-family: 'Sen', sans-serif;
+    font-size: 13px;
+    border: 2px solid #eeeae2;
+    text-shadow: none;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #727077;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: #eeeae2;
+    text-shadow: none;
+    font-family: 'Sen', sans-serif;
+}
+
+/*------- Start Over popover --------*/
+.modal-body {
+    position: relative;
+    padding: 20px;
+    background-color: #727077;
+    font-size: 16px;
+}
+
+/*------- Buttons -------*/
+
+.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
+    color: #eeeae2;
+    background-color: #A49592;
+    background-image: none;
+    border: 2px solid #eeeae2;
+    font-family: 'Sen', sans-serif;
+    font-size: 15px;
+    text-shadow: none;
+}
+
+/*------- Buttons when hovering -------*/
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
+  background-color: #f69793;
+  color: #eeeae2;
+  font-family: 'Sen', sans-serif;
+}
+
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs{
+    font-size: 13px;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    margin-right: 0;
+    margin-top: -1px;
+    font-size: 13px;
+    margin-left: 12px;
+    padding-right: 8px;
+    font-weight: normal;
+    background-color: #f69793;
+    color: #eeeae2;
+    border: 0;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    color: #eeeae2;
+    background-color: lightgray;
+    background-image: none;
+    border: none;
+    font-family: 'Sen', sans-serif;
+    font-size: 13px;
+}
+
+/*------- Update Next Section button -------*/
+.topicActions .btn-primary:hover {
+    color: #eeeae2;
+    background-color: #f69793;
+    background-image: none;
+    border: none;
+    font-family: 'Sen', sans-serif;
+}
+
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: #f69793;
+    border: 0;
+    color: #eeeae2;
+}
+
