@@ -2,11 +2,16 @@ Package: learnrdelight
 Title: R Markdown templates for learnr tutorials
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Alison",
+    c(person(given = "Alison",
            family = "Hill",
            role = c("aut", "cre"),
            email = "alison@rstudio.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+      person(given = "Allison",
+           family = "Horst",
+           role = c("aut"),
+           email = "ahorst@ucsb.edu")
+      )
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
