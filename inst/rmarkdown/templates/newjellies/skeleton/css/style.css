@@ -1,18 +1,21 @@
 /******
-glacier
+newjellies
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
+
 
 /*-------- Background color & body font --------*/
 body {
   background-color: white;
-  font-family: 'Mukta', sans-serif;
-  color: #485056;
+  font-family: 'Jost', sans-serif;
+  color: dimgray;
   font-size: 16px;
 }
 
@@ -23,73 +26,70 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #eaf0f0;
-    border-left: 5px solid #cee5e5;
+    background-color: white;
+    border-left: 0;
 }
 
-/*------- padding sides --------*/
 .band {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     position: relative;
 }
 
 /* Emphasis (e.g. italics) */
 em {
-    font-family: 'Mukta', sans-serif;
-    color: #2a7388;
+    font-family: 'Jost', sans-serif;
+    color: dimgray;
 }
 
 /*--------- Headers ---------*/
 
 h2 {
-  color: #4e737d;
-  font-family: 'Glegoo', serif;
-  font-size: 24px;
+  color: mediumslateblue;
+  font-family: 'Delius', cursive;
 }
 
 h3 {
-  color: #2a7388;
-  font-family: 'Glegoo', serif;
-  font-size: 20px;
+  color: mediumorchid;
+  font-family: 'Delius', cursive;
 }
 
 h4 {
-  color: #2a7388;
-  font-family: 'Glegoo', serif;
-  font-size: 18px;
+  color: mediumorchid;
+  font-family: 'Delius', cursive;
 }
 
 h5 {
-    color: #2a7388;
-    font-family: 'Glegoo', serif;
+    color: mediumorchid;
+    font-family: 'Delius', cursive;
     font-size: 16px;
 }
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: #4e737d;
-    background-color: #cee5e5;
+    color: white;
+    background-color: lightseagreen;
     border: 0;
 }
 
 /*------- Rectangle panels --------*/
 .panel, pre {
     border-radius: 0;
-    background-color: #cee5e5;
+    background-color: lightseagreen;
     border: 0;
     font-size: 16px;
+    font: 'Jost', sans-serif
 }
-
 
 /*-------- Code chunk main panel --------*/
 
 .ace-tm {
     background-color: white;
-    color: #3f3f3f;
-    border: 0;
+    color: dimgray;
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /*-------- Line # cells --------*/
@@ -98,50 +98,46 @@ h5 {
     padding-left: 19px;
     padding-right: 6px;
     background-repeat: no-repeat;
-    background-color: #89c8d1;
-    border: 0;
-    color: #f0f5f9;
+    background-color: gainsboro;
+    color: lightseagreen;
 }
 
 /*-------- Code returns --------*/
 .tutorial-exercise-output > pre {
     max-height: 500px;
     overflow-y: auto;
-    background-color: white;
-    color: #3f3f3f;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    background-color: gainsboro;
+    color: dimgray;
 }
 
 
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: #4e737d;
-    background-color: #cee5e5;
-    font-size: 14px;
+    color: lightseagreen;
+    background-color: gainsboro;
+    font-size: 16px;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Mukta', sans-serif;
-    color: #4e737d;
+    font-family: 'Jost', sans-serif;
+    color: lightseagreen;
     text-decoration: none;
-    font-size: 16px;
 }
 
 a:hover, a:focus {
-    color: #4e737d;
+    color: mediumslateblue;
     text-decoration: underline;
-    font-size: 16px;
 }
+
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Glegoo', serif;
-    color: #4e737d;
+    font-family: 'Delius', cursive;
+    color: lightseagreen;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 10px;
     cursor: pointer;
     background-color: white;
@@ -150,7 +146,7 @@ a:hover, a:focus {
     background-position: left 100%;
         background-position-y: 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 1px solid #89c8d1;
+    border-bottom: 0;
     border-top: 0;
     -webkit-transition-property: background-position;
     transition-property: background-position;
@@ -160,26 +156,25 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Glegoo', serif;
-    background-color: #4e737d;
-    color: #f0f5f9;
+    font-family: 'Delius', cursive;
+    background-color: mediumslateblue;
+    color: white;
     border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: #cee5e5;
-    color: #4e737d;
+    background-color: mediumorchid;
+    color: white;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: #4e737d;
-    color: #eaf0f0;
-    font-family: 'Mukta', sans-serif;
+    background-color: mediumorchid;
+    color: white;
+    font-family: 'Delius', cursive;
     font-size: 14px;
     border: 0;
-    text-shadow: none;
 }
 
 /*------- Solution popover --------*/
@@ -187,31 +182,30 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #4e737d;
+    background-color: mediumslateblue;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
-    color: #f0f5f9;
-    text-shadow: none;
-    font-family: 'Glegoo', serif;
+    color: white;
+    font-family: 'Delius', cursive;
 }
 
 /*------- Buttons -------*/
 
-.btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
-    color: #eaf0f0;
-    background-color: #4e737d;
+.btn-primary, .btn-success, .btn-info, .btn-xs{
+    color: white;
+    background-color: mediumorchid;
     background-image: none;
-    border: 0;
-    font-family: 'Mukta', sans-serif;
+    border: none;
+    font-family: 'Delius', cursive;
     font-size: 12px;
     text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: #2a7388;
-  color: #f0f5f9;
-  font-family: 'Mukta', sans-serif;
+  background-color: mediumslateblue;
+  color: white;
+  font-family: 'Delius', cursive;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -227,33 +221,48 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: #2a7388;
-    color: #f0f5f9;
-    border: 0;
+    background-color: mediumslateblue;
+    color: white;
 }
 
 /*------- Button disabled -------*/
 .btn-primary.disabled {
-    color: #f0f5f9;
-    background-color: lightgray;
+    color: #c8c8c8;
+    background-color: #5a5a5a;
     background-image: none;
     border: none;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Delius', cursive;
+    text-shadow: none;
+}
+
+/*------- Button default/primary -------*/
+.btn-default {
+    color: white;
+    background-color: mediumorchid;
+    background-image: none;
+    border: none;
+    font-family: 'Delius', cursive;
+    font-size: 14px;
+    text-shadow: none;
+}
+
+.btn-primary {
+    color: white;
+    background-color: mediumorchid;
+    background-image: none;
+    border: none;
+    font-family: 'Delius', cursive;
+    font-size: 14px;
+    text-shadow: none;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
-    color: #f0f5f9;
-    background-color: #2a7388;
+    color: white;
+    background-color: mediumslateblue;
     background-image: none;
     border: none;
-    font-family: 'Mukta', sans-serif;
-}
-
-/*-------- Answer alert --------*/
-.alert-success {
-    background-color: #2a7388;
-    border: #2a7388;
-    color: white;
+    font-family: 'Delius', cursive;
+    text-shadow: none;
 }
 

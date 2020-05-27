@@ -1,19 +1,20 @@
 /******
-sanddollar
+thistle
 *******/
 
 /*-------- Google font imports --------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /*-------- Background color & body font --------*/
 body {
-  background-color: #e4e0dc;
-  font-family: 'Jaldi', sans-serif;
-  color: #616161;
+  background-color: linen;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #757e8c;
 }
+
 
 /*-------- Main Panel ---------*/
 .topics {
@@ -22,8 +23,8 @@ body {
     padding-bottom: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: white;
-    border-left: 0;
+    background-color: antiquewhite;
+    border-left: 3px solid thistle;
     border-right: 0;
 }
 
@@ -36,34 +37,34 @@ body {
 
 /* Emphasis */
 em {
-    font-family: 'Jaldi', sans-serif;
-    color: #3d3835;
+    font-family: 'DM Serif Text', serif;
+    color: lightslategray;
 }
 
 /*--------- Headers ---------*/
 
 p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h2 {
-  color: #217371;
-  font-family: 'Ropa Sans', sans-serif;
+  color: #757e8c;
+  font-family: 'DM Serif Text', serif;
 }
 
 h3 {
-  color: #40b6b4;
-  font-family: 'Ropa Sans', sans-serif;
+  color: #757e8c;
+  font-family: 'DM Serif Text', serif;
 }
 
 h4 {
-  color: #40b6b4;
-  font-family: 'Ropa Sans', sans-serif;
+  color: #757e8c;
+  font-family: 'DM Serif Text', serif;
 }
 
 h5 {
-    color: #40b6b4;
-    font-family: 'Ropa Sans', sans-serif;
+    color: #757e8c;
+    font-family: 'DM Serif Text', serif;
     font-size: 16px;
 }
 
@@ -77,18 +78,18 @@ h5 {
 
 /*-------- Code chunk header panel ---------*/
 .panel-default > .panel-heading {
-    color: #b8a48d;
-    background-color: #e4e0dc;
-    border-top: 1px solid #e4e0dc;
-    border-left: 1px solid #e4e0dc;
-    border-right: 1px solid #e4e0dc;
+    color: lightslategray;
+    background-color: thistle;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-size: 16px;
 }
 
 /*------- Rectangle panels --------*/
 .panel, pre {
     border-radius: 0;
-    background-color: #e4e0dc;
+    background-color: thistle;
     border: 0;
     font-size: 16px;
 }
@@ -97,11 +98,11 @@ h5 {
 /*-------- Code chunk main panel --------*/
 
 .ace-tm {
-    background-color: white;
-    color: #3f3f3f;
-    border-bottom: 1px solid #e4e0dc;
-    border-left: 1px solid #e4e0dc;
-    border-right: 1px solid #e4e0dc;
+    background-color: linen;
+    color: darkslategray;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
 }
@@ -112,9 +113,9 @@ h5 {
     padding-left: 10px;
     padding-right: 4px;
     background-repeat: no-repeat;
-    background-color: #e4e0dc;
-    border: 0;
-    color: #b8a48d;
+    background-color: linen;
+    border-right: 4px solid antiquewhite;
+    color: lightslategray;
 }
 
 /*-------- Code returns --------*/
@@ -130,37 +131,38 @@ h5 {
 /*------- In line code aesthetic --------*/
 code {
     font-family: 'Roboto Mono', monospace;
-    color: white;
-    background-color: #40b6b4;
+    color: lightslategray;
+    background-color: linen;
     font-size: 14px;
+    border-radius: 0;
 }
 
 /*------- Hyperlinks --------*/
 a {
-    font-family: 'Jaldi', sans-serif;
-    color: #217371;
+    font-family: 'DM Serif Text', serif;
+    color: rosybrown;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #65bfb2;
+    color: rosybrown;
     text-decoration: underline;
 }
 
 /*------- Main menu -------*/
 .topicsList .topic {
-    font-family: 'Ropa Sans', sans-serif;
-    color: #217371;
+    font-family: 'DM Serif Text', serif;
+    color: #757e8c;
     line-height: 40px;
     font-size: 20px;
     padding-left: 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: none;
     background-repeat: no-repeat;
     background-size: 2px 80px;
     background-position: left 100%;
     background-image: url(images/topicProgress.png);
-    border-bottom: 1px solid #edeae2;
+    border-bottom: 2px solid antiquewhite;
     border-top: 0;
     -webkit-transition-property: background-position;
     transition-property: background-position;
@@ -170,24 +172,23 @@ a:hover, a:focus {
 
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
-    font-family: 'Ropa Sans', sans-serif;
-    background-color: #b8a48d;
-    color: white;
+    font-family: 'DM Serif Text', serif;
+    background-color: thistle;
+    color: #757e8c;
     border: 0;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: #40b6b4;
-    color: white;
-    border: 0;
+    background-color: antiquewhite;
+    color: lightslategray;
 }
 
 /*------- Solution / Hint buttons -------*/
 .tutorial-exercise-input .btn-tutorial-solution {
     margin-left: 15px;
-    background-color: #40b6b4;
-    color: white;
-    font-family: 'Jaldi', sans-serif;
+    background-color: rosybrown;
+    color: linen;
+    font-family: 'DM Serif Text', serif;
     font-size: 13px;
     border: 0;
     text-shadow: none;
@@ -198,31 +199,31 @@ a:hover, a:focus {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #65bfb2;
-    border-bottom: 1px solid #ebebeb;
+    background-color: rosybrown;
+    border-bottom: 1px solid linen;
     border-radius: 5px 5px 0 0;
-    color: white;
+    color: linen;
     text-shadow: none;
-    font-family: 'Jaldi', sans-serif;
+    font-family: 'DM Serif Text', serif;
 }
 
 /*------- Buttons -------*/
 
 .btn-primary, .btn-success, .btn-info, .btn-xs, .btn-default {
-    color: white;
-    background-color: #40b6b4;
+    color: linen;
+    background-color: rosybrown;
     background-image: none;
     border: 0;
-    font-family: 'Jaldi', sans-serif;
+    font-family: 'DM Serif Text', serif;
     font-size: 15px;
     text-shadow: none;
 }
 
 /*------- Buttons when hovering -------*/
 .btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
-  background-color: #217371;
-  color: white;
-  font-family: 'Jaldi', sans-serif;
+  background-color: #E9967A;
+  color: linen;
+  font-family: 'DM Serif Text', serif;
 }
 
 /*-------- Code chunk buttons hover aesthetic -------*/
@@ -238,8 +239,8 @@ a:hover, a:focus {
     margin-left: 12px;
     padding-right: 8px;
     font-weight: normal;
-    background-color: #217371;
-    color: white;
+    background-color: #E9967A;
+    color: linen;
     border: 0;
 }
 
@@ -249,27 +250,27 @@ a:hover, a:focus {
     background-color: lightgray;
     background-image: none;
     border: none;
-    font-family: 'Jaldi', sans-serif;
+    font-family: 'DM Serif Text', serif;
     font-size: 13px;
 }
 
 /*------- Update Next Section button -------*/
 .topicActions .btn-primary:hover {
-    color: white;
-    background-color: #217371;
+    color: linen;
+    background-color: #E9967A;
     background-image: none;
     border: none;
-    font-family: 'Jaldi', sans-serif;
+    font-family: 'DM Serif Text', serif;
 }
 
 /*-------- Answer alert --------*/
 .alert-success {
-    background-color: #40b6b4;
+    background-color: #E9967A;
     border: 0;
     color: white;
 }
 .alert-danger {
-    background-color: #ffbf9d;
+    background-color: #757e8c;
     border: 0;
     color: white;
 }
