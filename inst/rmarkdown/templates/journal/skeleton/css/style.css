@@ -1,0 +1,298 @@
+/******
+journal
+Inspired by: https://www.pagedjs.org/documentation/
+*******/
+
+/*-------- Google font imports --------*/
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Linden+Hill:ital@0;1&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=PT+Mono&family=Raleway:wght@400;500;600&display=swap');
+
+/*-------- Background color & body font --------*/
+body {
+  background-color: white;
+  font-family: 'Linden Hill', serif;
+  color: black;
+  font-size: 18px;
+}
+
+/*-------- Main Panel ---------*/
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-left: 2px dotted gainsboro;
+}
+
+/*------- padding sides --------*/
+.band {
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+
+/*--------- Text stuuuff ---------*/
+
+p {
+
+  color: black;
+  font-family: 'Linden Hill', serif;
+  font-size: 1em;
+  font-weight: 500;
+
+}
+
+/* em */
+em {
+    font-family: 'Linden Hill', serif;
+    font-weight: 400;
+    color: gray;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+}
+
+h2 {
+  color: black;
+  font-family: 'Linden Hill', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3em;
+}
+
+h3 {
+  color: black;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+h4 {
+  color: black;
+  font-family: 'Linden Hill', serif;
+}
+
+h5 {
+    color:  black;
+    font-family: 'Linden Hill', serif;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+    color: gray;
+    background-color:  #d8d8d8;
+    border: 0;
+    border-radius: 0;
+}
+
+/*------- Rectangle panels --------*/
+.panel, pre {
+    border-radius: 0;
+    background-color: #e0e0e0;
+    border: 0;
+    font-size: 18px;
+    color: black;
+}
+
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+    background-color: #f0f0f0;
+    color: dimgray;
+    border: 0;
+    font-family: 'PT Mono', monospace;
+    font-size: 14px;
+}
+
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 10px;
+    padding-right: 4px;
+    background-repeat: no-repeat;
+    background-color: #e2e2e2;
+    color: dimgray;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: white;
+    color: black;
+    font-family: 'PT Mono', monospace;
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+    font-family: 'PT Mono', monospace;
+    color: black;
+    background-color: gainsboro;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+/*------- Hyperlinks --------*/
+a {
+    font-family: 'Linden Hill', serif;
+    color: dimgray;
+}
+
+a:hover, a:focus {
+    color: dimgray;
+    text-decoration: underline;
+}
+
+/*------- Main menu -------*/
+.topicsList .topic {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: black;
+    line-height: 60px;
+    font-size: 18px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 2px 80px;
+    background-position: left 100%;
+        background-position-y: 100%;
+    background-image: url(images/topicProgress.png);
+    border: 0;
+    -webkit-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+/*------- Selected menu item -------*/
+.topicsList .topic.current {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/*--- When hovering ---*/
+.topicsList .topic:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    font-size: 1em;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: lightgray;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: black;
+}
+
+/*------- Buttons -------*/
+
+.btn-primary, .btn-success, .btn-info, .btn-xs{
+    color: white;
+    background-color: black;
+    background-image: none;
+    border: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+/*------- Buttons when hovering -------*/
+.btn-default:hover, btn-success:hover, btn-info:hover, btn-primary:hover {
+  background-color: #41c19e;
+  color: white;
+}
+
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs{
+    font-size: 12px;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    margin-right: 0;
+    margin-top: -1px;
+    font-size: 12px;
+    margin-left: 12px;
+    padding-right: 8px;
+    font-weight: normal;
+    background-color: #41c19e;
+    color: white;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    color: lightgray;
+    background-color: black;
+    background-image: none;
+    border: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+}
+
+/*------- Button default/primary -------*/
+.btn-default {
+    color: white;
+    background-color: black;
+    border: 0;
+    background-image: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: black;
+    background-image: none;
+    border: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+/*------- Update Next Section button -------*/
+.topicActions .btn-primary:hover {
+    color: white;
+    background-color: #41c19e;
+    background-image: none;
+    border: none;
+}
+
+/*-------- Answer alert --------*/
+.alert-success {
+    background-color: #41c19e;
+    border: 0;
+    color: white;
+}
+
+.alert-danger {
+    background-color: black;
+    border: 0;
+    color: white;
+}
+
